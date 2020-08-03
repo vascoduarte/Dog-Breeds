@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Dog Breeds</string>
+    <string name="disclaimer">Breeds list and all images are publicly available via dog.ceo</string>
+    <string name="about">Are you a Dog lover?\nAre you missing your dog?\nDo dogs calm you down?</string>
+    <string name="about_focus_text">You can now find hundreds of pictures where dogs are the camera focus!</string>
+    <string name="retry">Retry</string>
+</resources>

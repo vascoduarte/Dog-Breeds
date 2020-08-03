@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <data>
+        <variable
+            name="breedDetail"
+            type="com.outdoors.dogbreeds.domain.ImageDetails" />
+        <variable
+            name="imageClick"
+            type="com.outdoors.dogbreeds.util.ImageListClickListener" />
+    </data>
+
+
+    <ImageView
+        android:id="@+id/breedImage"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/image_grid_height"
+        android:adjustViewBounds="true"
+        android:onClick="@{()->imageClick.onClick(breedDetail)}"
+        android:scaleType="centerInside"
+        app:imageUrl="@{breedDetail.url}"
+        tools:srcCompat="@drawable/ic_breed_placeholder" />
+
+</layout>

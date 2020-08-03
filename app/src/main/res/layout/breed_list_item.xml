@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+    <data>
+        <variable
+            name="breedItem"
+            type="com.outdoors.dogbreeds.domain.Breed" />
+        <variable
+            name="breedItemClick"
+            type="com.outdoors.dogbreeds.util.BreedListClickListener" />
+    </data>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/list_item_height"
+        android:onClick="@{()->breedItemClick.onClick(breedItem)}"
+        android:orientation="vertical"
+        android:background="@drawable/list_selector">
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/list_text_height"
+            android:gravity="center_vertical"
+            android:paddingLeft="@dimen/listPadding"
+            android:paddingRight="@dimen/listPadding"
+            app:showPrettyName="@{breedItem.name}"
+            tools:text="Breed name"
+            android:textColor="@android:color/white"/>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/colorAccent" />
+
+    </LinearLayout>
+</layout>
