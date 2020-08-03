@@ -3,13 +3,22 @@
  
 Using MVVM design pattern and AndroidX libraries:
 
-. ViewModels
-. LiveData
-. NavigationUI
-. Kotlin Coroutines
-. Retrofit
-. OkHttp
-. Glide
-. Hilt + Dagger 2
-. Espresso 
-. Mockito
+● ViewModels
+
+● LiveData
+
+● NavigationUI
+
+● Kotlin Coroutines
+
+● Retrofit
+
+● OkHttp
+
+● Glide
+
+● Hilt + Dagger 2
+
+● Espresso
+
+● Mockito
